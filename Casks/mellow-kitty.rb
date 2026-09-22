@@ -4,7 +4,7 @@ cask "mellow-kitty" do
 
   url "https://www.mellow.world/cat/Mellow-Kitty-#{version}.dmg"
   name "Mellow Kitty"
-  desc "Filmed tabby cat that lives on the edge of the Mellow window, guards a focus timer and carries posts to the Plan"
+  desc "Filmed cat that lives on the edge of the Mellow window and guards a focus timer"
   homepage "https://www.mellow.world/cat"
 
   livecheck do
