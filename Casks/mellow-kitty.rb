@@ -1,6 +1,6 @@
 cask "mellow-kitty" do
-  version "0.2.0"
-  sha256 "004ecbff52d268f65c14ee8f9391e461be5bef28e379c85fedbbe2b79ddb1441"
+  version "0.2.1"
+  sha256 "da8de83e0c42310489c93d97ee17e0bc41321813d04b7b633409c29d4efb4976"
 
   url "https://www.mellow.world/cat/Mellow-Kitty-#{version}.dmg"
   name "Mellow Kitty"
@@ -12,6 +12,7 @@ cask "mellow-kitty" do
     regex(/Mellow[._-]Kitty[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
+  auto_updates true
   depends_on macos: :monterey
 
   app "Mellow Kitty.app"
