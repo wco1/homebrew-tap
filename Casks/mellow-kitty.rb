@@ -1,6 +1,6 @@
 cask "mellow-kitty" do
-  version "0.1.5"
-  sha256 "cf497715945e09bf273221986b8e6862006daf6133cdd6c57d27b7d197107586"
+  version "0.2.0"
+  sha256 "004ecbff52d268f65c14ee8f9391e461be5bef28e379c85fedbbe2b79ddb1441"
 
   url "https://www.mellow.world/cat/Mellow-Kitty-#{version}.dmg"
   name "Mellow Kitty"
@@ -12,14 +12,17 @@ cask "mellow-kitty" do
     regex(/Mellow[._-]Kitty[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
-  depends_on macos: :sonoma
+  depends_on macos: :monterey
 
   app "Mellow Kitty.app"
 
   zap trash: [
     "~/Library/Application Support/MellowMac",
     "~/Library/Caches/app.quietly.creator.mac",
+    "~/Library/HTTPStorages/app.quietly.creator.mac",
+    "~/Library/HTTPStorages/app.quietly.creator.mac.binarycookies",
     "~/Library/Preferences/app.quietly.creator.mac.plist",
     "~/Library/Saved Application State/app.quietly.creator.mac.savedState",
+    "~/Library/WebKit/app.quietly.creator.mac",
   ]
 end
