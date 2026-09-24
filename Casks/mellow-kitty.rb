@@ -1,6 +1,6 @@
 cask "mellow-kitty" do
-  version "0.2.3"
-  sha256 "9c431986a830cb7c5c5a4e296ea4e7378eec730b505b2c29911664c344e31b8b"
+  version "0.2.4"
+  sha256 "5352a4ec18854878cdc8e1f10a06d7702e7bc8b2e93b04f9e463d0309209c463"
 
   url "https://www.mellow.world/cat/Mellow-Kitty-#{version}.dmg"
   name "Mellow Kitty"
